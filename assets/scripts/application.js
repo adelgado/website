@@ -13,7 +13,7 @@ define(['chaplin'], function(Chaplin) {
       return _ref;
     }
 
-    Application.prototype.title = 'Chaplin example application';
+    Application.prototype.title = 'Empregos Tech RJ';
 
     return Application;
 
