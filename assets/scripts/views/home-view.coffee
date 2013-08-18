@@ -17,9 +17,3 @@ define [
     # Automatically render after initialize.
     autoRender: true
     className: 'home'
-
-    listen:
-      'click nav': @navigationClicked
-
-    navigationClicked: (event) ->
-      console.log 'navigation was clicked'

@@ -3,7 +3,7 @@ var express     = require('express')
   , path        = require('path')
   , consolidate = require('consolidate')
   , profile     = require('./routes/profile')
-  , home        = require('./routes/home')
+  , home        = require('./routes/home').home
 
 var app = express()
 

@@ -21,14 +21,6 @@ define(['views/base/view', 'text!templates/home.hbs'], function(View, template) 
 
     HomeView.prototype.className = 'home';
 
-    HomeView.prototype.listen = {
-      'click nav': HomeView.navigationClicked
-    };
-
-    HomeView.prototype.navigationClicked = function(event) {
-      return console.log('navigation was clicked');
-    };
-
     return HomeView;
 
   })(View);
