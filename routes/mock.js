@@ -1,3 +1,4 @@
+/* Mocks for the PROFILE routes */
 exports.profile = {}
 exports.profile.all = [{
 	  "id" 				 : 10,
@@ -58,7 +59,6 @@ exports.profile.all = [{
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
 								"C", "linux", "opensource" ]
   }]
-
 exports.profile.get    = {
 	  "id" 				 : 61,
 	  "name" 			 : "Larry Wall",
@@ -68,8 +68,22 @@ exports.profile.get    = {
 	  "qualifications" : "Linguistics, NASA and a lot of crazy shit",
 	  "birthDate"		 : "01/02/1990",
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
-								"C", "linux", "opensource" ]
-  }
+								 "C", "linux", "opensource" ]
+  }]
+
 exports.profile.create = { id : 52 }
+
 exports.profile.update = { phone2 :'89077654' }
+
 exports.profile.delete = {}
+
+/* Mocks for the TOPIC routes */
+
+exports.topic 		   = {}
+exports.topic.create = { id : 420 }
+exports.topic.update	= {}
+exports.topic.delete	= {}
+exports.topic.get  	= { id : 23, topic : "Lua"}
+exports.topic.all  	= ["perl", "C", "C++", "Java", "python", "clojure", "Lua", "javascript", "c#",
+							 "Scala", "Ruby", "perl6", "python3", "coffescript", "nodejs", "nosql" ]
+
