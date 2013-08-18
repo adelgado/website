@@ -2,6 +2,12 @@
 define(function() {
   'use strict';
   return function(match) {
-    return match('', 'home#show');
+    match('', 'home#show');
+    match('profiles', 'profile#show');
+    match('profile/new', 'profile#add');
+    match('profile/:id', 'profile#display');
+    match('positions', 'position#show');
+    match('position/new', 'position#add');
+    return match('search', 'search#show');
   };
 });
