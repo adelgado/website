@@ -58,7 +58,17 @@ exports.profile.all = [{
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
 								"C", "linux", "opensource" ]
   }]
-exports.profile.get    = {}
-exports.profile.create = {}
-exports.profile.update = {}
+exports.profile.get    = {
+	  "id" 				 : 61,
+	  "name" 			 : "Larry Wall",
+	  "email" 			 : "lwall@website.com",
+	  "phone1" 			 : "82345678", 
+	  "phone2" 			 : "23450789", 
+	  "qualifications" : "Linguistics, NASA and a lot of crazy shit",
+	  "birthDate"		 : "01/02/1990",
+	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
+								"C", "linux", "opensource" ]
+  }]
+exports.profile.create = { id : 52 }
+exports.profile.update = { phone2 :'89077654' }
 exports.profile.delete = {}
