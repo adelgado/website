@@ -27,11 +27,17 @@ if ('development' == app.get('env')) {
 
 app.get    ('/',                home)
 
-app.get    ('/api/profile/:id', profile.get)
 app.get    ('/api/profiles',    profile.all)
-app.post   ('/api/profiles',    profile.create)
-app.put    ('/api/profiles',    profile.update)
-app.delete ('/api/profiles',    profile.delete)
+app.get    ('/api/profile/:id', profile.get)
+app.post   ('/api/profile',     profile.create)
+app.put    ('/api/profile',     profile.update)
+app.delete ('/api/profile',     profile.delete)
+
+app.get    ('/api/topics',      topic.all)
+app.get    ('/api/topic/:id',   topic.get)
+app.post   ('/api/topic',       topic.create)
+app.put    ('/api/topic',       topic.update)
+app.delete ('/api/topic',       topic.delete)
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'))
