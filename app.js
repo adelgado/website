@@ -2,8 +2,8 @@ var express     = require('express')
   , http        = require('http')
   , path        = require('path')
   , consolidate = require('consolidate')
-  , routes      = require('./routes')
   , profile     = require('./routes/profile')
+  , home        = require('./routes/home')
 
 var app = express()
 
@@ -25,7 +25,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler())
 }
 
-app.get    ('/',                routes.home)
+app.get    ('/',                home)
 
 app.get    ('/api/profile/:id', profile.get)
 app.get    ('/api/profiles',    profile.all)

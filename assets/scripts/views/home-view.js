@@ -13,13 +13,21 @@ define(['views/base/view', 'text!templates/home.hbs'], function(View, template) 
       return _ref;
     }
 
+    HomeView.prototype.template = template;
+
+    template = null;
+
     HomeView.prototype.autoRender = true;
 
     HomeView.prototype.className = 'home';
 
-    HomeView.prototype.template = template;
+    HomeView.prototype.listen = {
+      'click nav': HomeView.navigationClicked
+    };
 
-    template = null;
+    HomeView.prototype.navigationClicked = function(event) {
+      return console.log('navigation was clicked');
+    };
 
     return HomeView;
 
