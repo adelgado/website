@@ -58,6 +58,7 @@ exports.profile.all = [{
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
 								"C", "linux", "opensource" ]
   }]
+
 exports.profile.get    = {
 	  "id" 				 : 61,
 	  "name" 			 : "Larry Wall",
@@ -68,7 +69,7 @@ exports.profile.get    = {
 	  "birthDate"		 : "01/02/1990",
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
 								"C", "linux", "opensource" ]
-  }]
+  }
 exports.profile.create = { id : 52 }
 exports.profile.update = { phone2 :'89077654' }
 exports.profile.delete = {}

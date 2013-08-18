@@ -24,12 +24,8 @@ app.use('/assets', express.static(__dirname + '/assets'))
 if ('development' == app.get('env')) {
   app.use(express.errorHandler())
 }
-<<<<<<< HEAD
-app.get    ('/',            routes.index)
-=======
 
 app.get    ('/',                home)
->>>>>>> d7fcec9060055b22bf0e12d2386de0944c99caed
 
 app.get    ('/api/profile/:id', profile.get)
 app.get    ('/api/profiles',    profile.all)
