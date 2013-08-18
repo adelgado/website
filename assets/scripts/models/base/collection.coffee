@@ -1,7 +1,10 @@
 define [
   'chaplin'
   'models/base/model'
-], (Chaplin, Model) ->
+], (
+  Chaplin
+  Model
+) ->
 
   class Collection extends Chaplin.Collection
     # Mixin a synchronization state machine.

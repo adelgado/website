@@ -1,12 +1,15 @@
 define [
   'chaplin',
   'models/base/model'
-], (Chaplin, Model) ->
+], (
+  Chaplin
+  Model
+) ->
   'use strict'
 
-  class HelloWorld extends Model
+  class Home extends Model
     defaults:
-      message: 'Hello World!'
+      message: 'Bem-vindo!'
 
     # initialize: (attributes, options) ->
     #   super

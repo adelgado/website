@@ -4,20 +4,20 @@ var __hasProp = {}.hasOwnProperty,
 
 define(['chaplin', 'models/base/model'], function(Chaplin, Model) {
   'use strict';
-  var HelloWorld, _ref;
-  return HelloWorld = (function(_super) {
-    __extends(HelloWorld, _super);
+  var Home, _ref;
+  return Home = (function(_super) {
+    __extends(Home, _super);
 
-    function HelloWorld() {
-      _ref = HelloWorld.__super__.constructor.apply(this, arguments);
+    function Home() {
+      _ref = Home.__super__.constructor.apply(this, arguments);
       return _ref;
     }
 
-    HelloWorld.prototype.defaults = {
-      message: 'Hello World!'
+    Home.prototype.defaults = {
+      message: 'Bem-vindo!'
     };
 
-    return HelloWorld;
+    return Home;
 
   })(Model);
 });

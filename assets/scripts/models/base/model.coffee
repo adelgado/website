@@ -1,6 +1,8 @@
 define [
   'chaplin'
-], (Chaplin) ->
+], (
+	Chaplin
+) ->
 
   class Model extends Chaplin.Model
     # Mixin a synchronization state machine.
