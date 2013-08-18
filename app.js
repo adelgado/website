@@ -25,7 +25,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler())
 }
 
-app.get    ('/',            routes.index)
+app.get    ('/',                routes.home)
 
 app.get    ('/api/profile/:id', profile.get)
 app.get    ('/api/profiles',    profile.all)
@@ -33,6 +33,6 @@ app.post   ('/api/profiles',    profile.create)
 app.put    ('/api/profiles',    profile.update)
 app.delete ('/api/profiles',    profile.delete)
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'))
 })

@@ -2,7 +2,11 @@ define [
   'underscore'
   'lib/utils'
   'chaplin'
-], (_, utils, Chaplin) ->
+], (
+  _
+  utils
+  Chaplin
+) ->
   'use strict'
   
   # Application-specific feature detection

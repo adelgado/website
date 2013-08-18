@@ -1,13 +1,16 @@
 define [
   'views/base/view'
-  'text!templates/hello-world.hbs'
-], (View, template) ->
+  'text!templates/home.hbs'
+], (
+  View
+  template
+) ->
   'use strict'
 
-  class HelloWorldView extends View
+  class HomeView extends View
     # Automatically render after initialize.
     autoRender: true
-    className: 'hello-world'
+    className: 'home'
 
     # Save the template string in a prototype property.
     # This is overwritten with the compiled template function.
