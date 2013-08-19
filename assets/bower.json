@@ -16,6 +16,6 @@
     "jquery"         : "*",
     "requirejs-text" : "~2.0.9",
     "handlebars"     : "~1.0.0",
-    "consolidate"    : "*"
+    "bootstrap"      : "*"
   }
 }
