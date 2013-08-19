@@ -1,9 +1,20 @@
+//requires
 var express     = require('express')
-  , http        = require('http')
-  , path        = require('path')
-  , consolidate = require('consolidate')
-  , profile     = require('./routes/profile')
-  , home        = require('./routes/home').home
+var http        = require('http')
+var path        = require('path')
+var consolidate = require('consolidate')
+var config      = require('./config')
+
+//routes
+var profile     = require('./routes/profile')
+var topic       = require('./routes/topic')
+var home        = require('./routes/home').home
+
+//mangoose
+var mongoose    = require('mongoose').connect(config.mongo.getUrl())
+
+mongoose.connection.on('error',  function(){ console.log('error on mongodb')})
+mongoose.connection.once('open', function(){ console.log('connection open on mongodb') })
 
 var app = express()
 

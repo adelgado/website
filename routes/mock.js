@@ -69,7 +69,7 @@ exports.profile.get    = {
 	  "birthDate"		 : "01/02/1990",
 	  "topics"         : ["perl", "camels", "usenet", "code obfuscation", "perl6",
 								 "C", "linux", "opensource" ]
-  }]
+  }
 
 exports.profile.create = { id : 52 }
 
