@@ -13,15 +13,7 @@ define(['controllers/base/controller', 'models/profile', 'views/profile-view'], 
       return _ref;
     }
 
-    ProfileController.prototype.show = function(params) {
-      this.model = new Profile();
-      return this.view = new ProfileView({
-        model: this.model,
-        region: 'main'
-      });
-    };
-
-    ProfileController.prototype.display = function(params) {
+    ProfileController.prototype.index = function(params) {
       this.model = new Profile();
       return this.view = new ProfileView({
         model: this.model,
@@ -30,6 +22,14 @@ define(['controllers/base/controller', 'models/profile', 'views/profile-view'], 
     };
 
     ProfileController.prototype.add = function(params) {
+      this.model = new Profile();
+      return this.view = new ProfileView({
+        model: this.model,
+        region: 'main'
+      });
+    };
+
+    ProfileController.prototype.show = function(params) {
       this.model = new Profile();
       return this.view = new ProfileView({
         model: this.model,

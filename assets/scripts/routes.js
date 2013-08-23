@@ -3,11 +3,11 @@ define(function() {
   'use strict';
   return function(match) {
     match('', 'home#show');
-    match('profiles', 'profile#show');
+    match('profiles', 'profile#index');
     match('profile/new', 'profile#add');
-    match('profile/:id', 'profile#display');
-    match('positions', 'position#show');
+    match('profile/:id', 'profile#show');
+    match('positions', 'position#index');
     match('position/new', 'position#add');
-    return match('search', 'search#show');
+    return match('search', 'search#index');
   };
 });

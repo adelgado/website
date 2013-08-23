@@ -10,19 +10,19 @@ define [
   'use strict'
 
   class ProfileController extends Controller
-    show: (params) ->
-      @model = new Profile()
-      @view = new ProfileView
-        model: @model
-        region: 'main'
-
-    display: (params) ->
+    index: (params) ->
       @model = new Profile()
       @view = new ProfileView
         model: @model
         region: 'main'
 
     add: (params) ->
+      @model = new Profile()
+      @view = new ProfileView
+        model: @model
+        region: 'main'
+        
+    show: (params) ->
       @model = new Profile()
       @view = new ProfileView
         model: @model

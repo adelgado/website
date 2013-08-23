@@ -1,7 +1,7 @@
 var mock = require('./mock').profile
 
 exports.all = function(req, res){
-  res.json(mock.all)
+	res.json(mock.all)
 }
 
 exports.delete = function(req,res){

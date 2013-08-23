@@ -6,9 +6,11 @@ define ->
   (match) ->
     match '', 'home#show'
 
-    match 'profiles'     , 'profile#show'
-    match 'profile/new'  , 'profile#add'
-    match 'profile/:id'  , 'profile#display'
-    match 'positions'    , 'position#show'
+    match 'profiles'    , 'profile#index'
+    match 'profile/new' , 'profile#add'
+    match 'profile/:id' , 'profile#show'
+
+    match 'positions'    , 'position#index'
     match 'position/new' , 'position#add'
-    match 'search'       , 'search#show'
+
+    match 'search', 'search#index'

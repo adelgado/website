@@ -1,11 +1,14 @@
 define [
   'chaplin'
+  'routes'
 ], (
   Chaplin
+  routes
 ) ->
   'use strict'
 
-  # The application object.
-  # Choose a meaningful name for your application.
   class Application extends Chaplin.Application
     title: 'Empregos Tech RJ'
+
+    initialize: ->
+      super
